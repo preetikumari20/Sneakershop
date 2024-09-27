@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slideshow </title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <div class="slide-content">
+                 <img src="https://demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/layer_01.png" alt="Slide 1" class="background-img">
+                   
+                <div class="shape">
+                        
+                <img src="//demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/sneaker2-1.png" alt="Layer 1" class="layer layer1">
+                
+                <img src="//demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/grid_dots.png" alt="Grid Dots" class="layer grid-dots">
+                </div>
+                <p class="price">$140</p>
+                    <div class="shape-wrapper1" style="background-color: rgb(90, 230, 149);">
+                    
+                </div>
+                
+                    <p class="title">Air Force<br>One Mid</p>
+                    <button class="more-btn">More</button>
+                </div>
+            </div>
+    
+            <div class="slide fade">
+                <div class="slide-content">
+                    <img src="https://demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/layer_01.png" alt="Slide 2" class="background-img">
+                   
+                    <div class="shape" style="background-color: #ff8e74;">
+                    <img src="//demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/sneaker-1.png" alt="Layer 1" class="layer layer1">
+                 
+                    <img src="//demo.kallyas.net/sneakers-shop/wp-content/uploads/sites/107/revslider/homeslider/grid_dots.png" alt="Grid Dots" class="layer grid-dots">
+                    </div>
+                    <p class="price" style="color: #ff8e74;">$140</p>
+                    <div class="shape-wrapper2" style="background-color: #ff8e74;"></div>
+                    
+                       
+                    <p class="title">Air Jordan 1<br>High OG</p>
+                    <button class="more-btn">More</button>
+                </div>
+            </div>
+    
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+        </div>
+        <script>
+        let slideIndex = 1;
+       showSlides(slideIndex);
+
+ function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+ }
+</script>
+ </body>
+</html>
+
+
+
+
